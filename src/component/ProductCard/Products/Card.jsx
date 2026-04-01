@@ -1,11 +1,15 @@
 import * as LucideIcons from "lucide-react";
 
 
-    import React from 'react';
+    import React, { useState } from 'react';
 
-    const Card = ({product}) => {
+    const Card = ({product , cart , setCart}) => {
         const Icon = LucideIcons[product.icon];
-
+        const [buyNow,setBuyNow]=useState(false);
+        const handelBuyNow =() =>{
+            setBuyNow(true);
+            setCart([...cart,product])
+        }
         return (
             <div >
                 <div className="card bg-base-100 w-full  shadow-sm p-6 space-y-4 h-full">
@@ -19,7 +23,7 @@ import * as LucideIcons from "lucide-react";
                         product.features.map((point,index)=><li key={index} className="flex items-center gap-2 text-[16px] text-[#627382]"><LucideIcons.Check size={16} className="text-[#11e517]" />{point}</li> )
                     }
 
-                    <button className="btn w-[90%] mt-2 mx-auto bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full py-2">Buy Now</button>
+                    <button onClick={handelBuyNow} className={`btn w-[90%] mt-2 mx-auto ${buyNow ? "bg-success":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} text-white rounded-full py-2`}>{buyNow ? "Added To The Cart":"Buy Now"}</button>
 
                 </div>
             </div>

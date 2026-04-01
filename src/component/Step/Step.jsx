@@ -43,7 +43,7 @@ const Step = () => {
             <div className='grid md:grid-cols-3 gap-6 container mx-auto mt-10 '>
 
                 {
-                    stepData.map(card => <StepCard card={card}></StepCard>)
+                    stepData.map((card,index) => <StepCard key={index} card={card}></StepCard>)
                 }
             </div>
 

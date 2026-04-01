@@ -4,6 +4,7 @@ import Cart from './Products/Cart/Cart';
 
 const ProductCard = ({productData}) => {
     const [toggle,setToggle]=useState(true);
+    const [cart,setCart]=useState([]);
     return (
         <div className='container mx-auto mb-10'>
 
@@ -16,11 +17,11 @@ const ProductCard = ({productData}) => {
             <div className="tabs tabs-box bg-transparent flex justify-center mt-4">
                
                 <input type="radio" onClick={()=>setToggle(true)} name="my_tabs_1" className="tab rounded-full w-25" aria-label="Product" defaultChecked />
-                <input type="radio" onClick={()=>setToggle(false)} name="my_tabs_1" className="tab  w-25 rounded-full" aria-label="Cart(2)" />
+                <input type="radio" onClick={()=>setToggle(false)} name="my_tabs_1" className="tab  w-25 rounded-full" aria-label={`Cart (${cart.length})`} />
             </div>
 
             <div className='my-10'>
-                {toggle?<Product productData={productData}></Product>:<Cart></Cart>}
+                {toggle?<Product productData={productData} cart={cart} setCart={setCart}></Product>:<Cart cart={cart} setCart={setCart}></Cart>}
                 
             </div>
 
