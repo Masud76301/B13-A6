@@ -9,11 +9,12 @@ const Pricing = () => {
             price: 0,
             tag: "Normal",
             period: "monthly",
-            info: "Best for beginners who need essential tools.",
+            info: "Best for beginners who need essential tools and you cen choose it.",
             features: [
                 "Access to basic tools",
                 "Email support",
-                "1 project limit"
+                "1 project limit",
+                "Team collaboration"
             ]
         },
 
@@ -54,7 +55,7 @@ const Pricing = () => {
             <div className='text-center space-y-4'>
                 <h1 className='text-5xl font-extrabold'>Simple, Transparent Pricing</h1>
                 <p className='text-[16px] text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
-                <div className='grid md:grid-cols-3 mt-10'>
+                <div className='grid md:grid-cols-3 gap-3 mt-10'>
                     {
                         pricingOptions.map((pricingCard, index) => <PricingCard key={index} pricingCard={pricingCard}></PricingCard>)
                     }
