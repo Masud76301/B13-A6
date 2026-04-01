@@ -2,13 +2,15 @@ import * as LucideIcons from "lucide-react";
 
 
     import React, { useState } from 'react';
+import { toast } from "react-toastify";
 
     const Card = ({product , cart , setCart}) => {
         const Icon = LucideIcons[product.icon];
         const [buyNow,setBuyNow]=useState(false);
         const handelBuyNow =() =>{
             setBuyNow(true);
-            setCart([...cart,product])
+            setCart([...cart,product]);
+            toast.success("Item added to cart!");
         }
         return (
             <div >

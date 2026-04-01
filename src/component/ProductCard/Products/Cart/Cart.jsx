@@ -2,11 +2,13 @@
 import React from 'react';
 import CartItem from "./CartItem";
 import { ShoppingCart } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
     const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
     const handelPayment = () => {
         setCart([]);
+        toast.success("Payment Successful!");
     }
 
     return (

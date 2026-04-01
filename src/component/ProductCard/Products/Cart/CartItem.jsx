@@ -1,11 +1,13 @@
 import * as LucideIcons from "lucide-react";
 import React from 'react';
+import { toast } from "react-toastify";
 
 const CartItem = ({ item,cart,setCart }) => {
     const Icon = LucideIcons[item.icon];
     const handelDelete =(item) =>{
        const filteredArray = cart.filter(c=> c.id !==item.id);
        setCart(filteredArray);
+       toast("Item Deleted Successfully!")
     }
     return (
         <div className='bg-base-200 p-5 rounded-2xl flex justify-between items-center'>
