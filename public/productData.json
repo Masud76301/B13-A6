@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Build professional resumes with easy drag-and-drop tools.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon": "FileText",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"]
+  },
+  {
+    "id": 2,
+    "name": "AI Cover Letter Writer",
+    "description": "Generate personalized cover letters in seconds.",
+    "price": 4.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "icon": "PenLine",
+    "features": ["AI-generated letters", "Editable templates", "Tone customization"]
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Kit",
+    "description": "Create a modern portfolio website instantly.",
+    "price": 7.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "icon": "Globe",
+    "features": ["Responsive layouts", "Custom domains", "SEO tools"]
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Premium",
+    "description": "Track job applications and manage your job hunt effectively.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon": "ListTodo",
+    "features": ["Application tracking", "Deadline reminders", "Status updates"]
+  },
+  {
+    "id": 5,
+    "name": "AI Interview Coach",
+    "description": "Practice interview questions with an AI-powered coach.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "icon": "Mic",
+    "features": ["Mock interviews", "AI feedback", "Performance analytics"]
+  },
+  {
+    "id": 6,
+    "name": "Career Growth Masterclass",
+    "description": "A complete video course to boost your career skills.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "icon": "GraduationCap",
+    "features": ["40+ video lessons", "Certificate included", "Lifetime updates"]
+  },
+  {
+    "id": 7,
+    "name": "LinkedIn Booster",
+    "description": "Optimize your LinkedIn profile for more job opportunities.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon": "UserCog",
+    "features": ["Profile optimization", "Headline suggestions", "Keyword recommendations"]
+  },
+  {
+    "id": 8,
+    "name": "Freelancer Starter Pack",
+    "description": "Everything you need to begin earning as a freelancer.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "icon": "Briefcase",
+    "features": ["Gig templates", "Client scripts", "Pricing guide"]
+  },
+  {
+    "id": 9,
+    "name": "Task Automation Suite",
+    "description": "Automate repetitive business and productivity tasks.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "icon": "Settings",
+    "features": ["Workflow builder", "AI automations", "Cloud sync"]
+  },
+  {
+    "id": 10,
+    "name": "Brand Logo Creator",
+    "description": "Generate high-quality logos for your business or project.",
+    "price": 3.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon": "Palette",
+    "features": ["HD logo export", "Icon library", "Unlimited revisions"]
+  }
+]
