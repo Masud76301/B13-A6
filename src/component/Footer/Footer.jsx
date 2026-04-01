@@ -6,10 +6,10 @@ import vector from '../../assets/social icon/Vector.png';
 
 const Footer = () => {
     return (
-        <div className='bg-black text-white h-120'>
+        <div className='bg-black text-white h-full'>
             <div className='container mx-auto pt-30 '>
 
-                <div className=' grid grid-cols-3 gap-12 mb-10'>
+                <div className=' grid md:grid-cols-3 gap-14  mb-10'>
                     <div>
                         <h1 className='font-extrabold text-4xl'>DigiTools</h1>
                         <p className='text-[16px] opacity-80 mt-4'>Premium digital tools for creators, <br></br> professionals, and businesses. Work smarter <br></br>with our suite of powerful tools.</p>
@@ -17,24 +17,24 @@ const Footer = () => {
                     <div className='flex gap-12'>
                         <ul className='space-y-4'>
                             <li className='text-[20px] font-medium'>Product</li>
-                            <li>Features</li>
-                            <li>Pricing</li>
-                            <li>Templates</li>
-                            <li>Integrations</li>
+                            <li className="opacity-80">Features</li>
+                            <li className="opacity-80">Pricing</li>
+                            <li className="opacity-80">Templates</li>
+                            <li className="opacity-80">Integrations</li>
                         </ul>
                         <ul className='space-y-4'>
-                            <li className='text-[20px] font-medium'>Product</li>
-                            <li>Features</li>
-                            <li>Pricing</li>
-                            <li>Templates</li>
-                            <li>Integrations</li>
+                            <li className='text-[20px] font-medium'>Company</li>
+                            <li className="opacity-80">About</li>
+                            <li className="opacity-80">Blog </li>
+                            <li className="opacity-80">Careers</li>
+                            <li className="opacity-80"></li>
                         </ul>
                         <ul className='space-y-4'>
-                            <li className='text-[20px] font-medium'>Product</li>
-                            <li>Features</li>
-                            <li>Pricing</li>
-                            <li>Templates</li>
-                            <li>Integrations</li>
+                            <li className='text-[20px] font-medium'>Resources</li>
+                            <li className="opacity-80">Documentation</li>
+                            <li className="opacity-80">Help Center</li>
+                            <li className="opacity-80">Community</li>
+                            <li className="opacity-80">Contact</li>
                         </ul>
                     </div>
                     <div>
