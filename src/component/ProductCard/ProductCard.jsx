@@ -16,8 +16,8 @@ const ProductCard = ({productData,cart,setCart}) => {
             {/* name of each tab group should be unique */}
             <div className="tabs tabs-box bg-transparent flex justify-center mt-4">
                
-                <input type="radio" onClick={()=>setToggle(true)} name="my_tabs_1" className="tab rounded-full w-25" aria-label="Product" defaultChecked />
-                <input type="radio" onClick={()=>setToggle(false)} name="my_tabs_1" className="tab  w-25 rounded-full" aria-label={`Cart (${cart.length})`} />
+                <input type="radio" onClick={()=>setToggle(true)} name="my_tabs_1" className={`tab ${toggle?"checked: bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":"checked:bg-white"} rounded-full w-25`} aria-label="Product" defaultChecked />
+                <input type="radio" onClick={()=>setToggle(false)} name="my_tabs_1" className={`tab ${toggle?"checked:bg-white":"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}  rounded-full w-25`} aria-label={`Cart (${cart.length})`} />
             </div>
 
             <div className='my-10'>
