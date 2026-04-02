@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Product from './Products/Product';
 import Cart from './Products/Cart/Cart';
 
-const ProductCard = ({productData}) => {
+const ProductCard = ({productData,cart,setCart}) => {
     const [toggle,setToggle]=useState(true);
-    const [cart,setCart]=useState([]);
+  
     return (
         <div className='container mx-auto mb-10'>
 
